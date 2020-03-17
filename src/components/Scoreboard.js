@@ -25,29 +25,32 @@ export default class Scoreboard extends React.Component {
     }
 
     render() {
+        const {matchinfo, home, away} = this.props;
+
+        const stylesheet = {
+            float: "left",
+            "marginRight": "20px",
+        };
+
         return (
             <div>
-                <div style={{float: "left", "marginRight": "30px"}}>
+                <div style={stylesheet}>
                     <h3>Home</h3>
                     <Team
-                        name={this.props.home.name}
+                        {...home}
                         goals={this.state.goals_home}
                         scoreGoal={this.scoreGoalHome.bind(this)}
                     />
                 </div>
 
-                <div style={{float: "left", "marginRight": "30px"}}>
-                    <MatchInfo 
-                        stadium={this.props.matchinfo.stadium}
-                        date={this.props.matchinfo.date}
-                        time={this.props.matchinfo.time}
-                    />
+                <div style={stylesheet}>
+                    <MatchInfo {...matchinfo} />
                 </div>
 
-                <div style={{float: "left", "marginRight": "30px"}}>
+                <div style={stylesheet}>
                     <h3>Away</h3>
                     <Team
-                        name={this.props.away.name}
+                        {...away}
                         goals={this.state.goals_away}
                         scoreGoal={this.scoreGoalAway.bind(this)}
                     />

@@ -18,10 +18,6 @@ const data = {
 
 export default class App extends React.Component {
     render() {
-        return <Scoreboard 
-                    matchinfo={data.matchinfo}
-                    home={data.home}
-                    away={data.away}
-                />;
+        return <Scoreboard {...data} />;
     }
 }
