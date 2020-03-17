@@ -7,10 +7,10 @@ export default class Team extends React.Component {
         return (
             <div>
                 <div>
-                    <h1>Liverpool</h1>
-                    <h2>0</h2>
+                    <h1>{this.props.name}</h1>
+                    <h2>{this.props.goals}</h2>
                 </div>
-                <ButtonGoal />
+                <ButtonGoal scoreGoal={this.props.scoreGoal} />
             </div>
         );
     }
