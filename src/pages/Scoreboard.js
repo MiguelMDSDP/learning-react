@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Scoreboard from './Scoreboard'
+import ScoreboardContainer from '../components/ScoreboardContainer'
 
 const data = {
     matchinfo: {
@@ -16,8 +16,8 @@ const data = {
     }
 };
 
-export default class App extends React.Component {
+export default class Scoreboard extends React.Component {
     render() {
-        return <Scoreboard {...data} />;
+        return <ScoreboardContainer {...data} />;
     }
 }

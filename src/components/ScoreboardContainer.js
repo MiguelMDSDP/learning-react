@@ -3,7 +3,7 @@ import React from 'react'
 import Team from './Team'
 import MatchInfo from './MatchInfo'
 
-export default class Scoreboard extends React.Component {
+export default class ScoreboardContainer extends React.Component {
     constructor() {
         super();
         this.state = {

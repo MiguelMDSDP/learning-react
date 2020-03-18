@@ -9,4 +9,5 @@ In this tutorial we learned about:
 1. How to configure a React environment;
 2. How to think with React;
 3. How to use props;
-4. What is a propType.
+4. What is a propType;
+5. How to use Routers.
