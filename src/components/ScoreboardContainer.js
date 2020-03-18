@@ -33,9 +33,9 @@ export default class ScoreboardContainer extends React.Component {
         };
 
         return (
-            <div>
-                <div style={stylesheet}>
-                    <h3>Home</h3>
+            <div className="container" style={{"textAlign": "center"}}>
+                <div className="hero" style={stylesheet}>
+                    <h3 className="subtitle">Home</h3>
                     <Team
                         {...home}
                         goals={this.state.goals_home}
@@ -48,7 +48,7 @@ export default class ScoreboardContainer extends React.Component {
                 </div>
 
                 <div style={stylesheet}>
-                    <h3>Away</h3>
+                    <h3 className="subtitle">Away</h3>
                     <Team
                         {...away}
                         goals={this.state.goals_away}

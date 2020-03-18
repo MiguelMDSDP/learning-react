@@ -1,5 +1,6 @@
 import React from 'react';
 
+import Navigation from '../components/Navigation'
 import ScoreboardContainer from '../components/ScoreboardContainer'
 
 const data = {
@@ -18,6 +19,11 @@ const data = {
 
 export default class Scoreboard extends React.Component {
     render() {
-        return <ScoreboardContainer {...data} />;
+        return (
+            <div>
+                <Navigation />
+                <ScoreboardContainer {...data} />
+            </div>
+        );
     }
 }
